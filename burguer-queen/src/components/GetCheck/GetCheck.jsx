@@ -5,6 +5,7 @@ import { showInfoTables } from "../../controllers";
 
 const GetCheck = ({ state }) => {
   const { id } = useParams();
+  console.log('aaaaaaaaaaaaaaaaa', id)
   const [total, setTotal] = React.useState([]);
   const [suma, setSuma] = React.useState(total);
   const [finalOrder, setFinalOrder] = React.useState([]);
