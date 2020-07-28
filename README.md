@@ -42,21 +42,20 @@ El registro de nuevos usuarios debe ser autorizado por el gerente del restaurant
 
 Shari Dan
 
-HTML y CSS
-
+## HTML y CSS
 - [ x ] [ x ] HTML semántico
 - [ x ] [ x ] CSS flexbox
 - [ x ] [ x ] Bootstrap
 - [ x ] [ x ] Maquetación
- Frontend Development
+## Frontend Development
 - [ x ] [ x ] Componentes
 - [ x] [ x ] Manejo del estado
-PWA
+## PWA
 - [ x ] [ x ] Concepto
 - [ x ] [ x ] Utilidad
 - [  ] [  ] Que es Workbox
 - [ x ] [ x ] Qué es un serviceWorker
- React
+## React
 - [ x ] [ x ] JSX
 - [ x ] [ x ] Componentes class y componentes function
 - [ x ] [ x ] props
@@ -67,25 +66,25 @@ PWA
 - [ x ] [ x ] hooks
 - [ x ] [ x ] CSS modules
 - [ x] [ x ] React Router
- Firebase
+## Firebase
 - [ x ] [ x ] Firestore
 - [ x ] [ x ] Firebase security rules
 - [ x ] [ x ] Observables
-Testing
+## Testing
 - [ x ] [ x ] Testeo de tus interfaces
 - [ x] [ x ] Testeo de componentes
 -  [ x  ] [ x ]Testeo asíncrono
 -  [  x] [ x ]Mocking
-- Colaboración en Github
+## Colaboración en Github
 - [ x ] [ x ] Branches
 - [ x ] [ x ] Pull Requests
 - [ ] [ ] Tags
- Organización en Github
+## Organización en Github
 - [ x ] [ x ] Projects
 - [ ] [  ]Issues
 - [  ] [  ]Labels
 -  [ ] [ ]Milestones
-Buenas prácticas de desarrollo
+## Buenas prácticas de desarrollo
 - [ x ] [ x ] Modularización
 - [ x ] [ x ] Nomenclatura / Semántica
 - [ x ] [ x ]Linting
