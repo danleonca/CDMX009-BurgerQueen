@@ -18,8 +18,7 @@ const TableStatus = (props) => {
            { return userLog()
             
             } else {
-              console.log("no hay nadie logueado")
-              props.history.push('/')
+             props.history.push('/')
             }
           }
         
@@ -31,7 +30,6 @@ const TableStatus = (props) => {
         const unsubscribe = showInfoTables2(cb, id)
         // return unsubscribe
         return () => {
-            console.log('desmontando compornete')
             unsubscribe();
         }
     }, [props.history])
@@ -105,7 +103,7 @@ const TableStatus = (props) => {
             </Container>
             <br></br><br></br>
             {
-                buttonCheck ? <GetCheck state= {setButtonCheck} /> : console.log("es falso")
+                buttonCheck && <GetCheck state= {setButtonCheck} /> 
             }
 
 

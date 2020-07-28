@@ -139,3 +139,4 @@ export const theWatcher = (state) => {
 export const getOut = () => {
   firebase.auth().signOut();
 };
+
