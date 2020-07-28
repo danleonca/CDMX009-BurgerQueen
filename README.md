@@ -78,12 +78,12 @@ Shari Dan
 ## Colaboración en Github
 - [ x ] [ x ] Branches
 - [ x ] [ x ] Pull Requests
-- [ ] [ ] Tags
+- [   ] [   ] Tags
 ## Organización en Github
 - [ x ] [ x ] Projects
-- [ ] [  ]Issues
-- [  ] [  ]Labels
--  [ ] [ ]Milestones
+- [ x ] [ x ] Issues
+- [ x ] [ x ] Labels
+- [ x ] [ x ] Milestones
 ## Buenas prácticas de desarrollo
 - [ x ] [ x ] Modularización
 - [ x ] [ x ] Nomenclatura / Semántica
