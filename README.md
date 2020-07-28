@@ -48,15 +48,15 @@ HTML y CSS
 - [ x ] [ x ] CSS flexbox
 - [ x ] [ x ] Bootstrap
 - [ x ] [ x ] Maquetación
-- Frontend Development
-- [x] [ x ] Componentes
-- [x] [ x ] Manejo del estado
-- PWA
+ Frontend Development
+- [ x ] [ x ] Componentes
+- [ x] [ x ] Manejo del estado
+PWA
 - [ x ] [ x ] Concepto
 - [ x ] [ x ] Utilidad
 - [  ] [  ] Que es Workbox
 - [ x ] [ x ] Qué es un serviceWorker
-- React
+ React
 - [ x ] [ x ] JSX
 - [ x ] [ x ] Componentes class y componentes function
 - [ x ] [ x ] props
@@ -67,11 +67,11 @@ HTML y CSS
 - [ x ] [ x ] hooks
 - [ x ] [ x ] CSS modules
 - [ x] [ x ] React Router
-- Firebase
+ Firebase
 - [ x ] [ x ] Firestore
 - [ x ] [ x ] Firebase security rules
 - [ x ] [ x ] Observables
-- Testing
+Testing
 - [ x ] [ x ] Testeo de tus interfaces
 - [ x] [ x ] Testeo de componentes
 -  [ x  ] [ x ]Testeo asíncrono
@@ -79,13 +79,13 @@ HTML y CSS
 - Colaboración en Github
 - [ x ] [ x ] Branches
 - [ x ] [ x ] Pull Requests
--  Tags
-- Organización en Github
+- [ ] [ ] Tags
+ Organización en Github
 - [ x ] [ x ] Projects
 - [ ] [  ]Issues
 - [  ] [  ]Labels
--  Milestones
-- Buenas prácticas de desarrollo
+-  [ ] [ ]Milestones
+Buenas prácticas de desarrollo
 - [ x ] [ x ] Modularización
-- [ x ] [ x ]] Nomenclatura / Semántica
+- [ x ] [ x ] Nomenclatura / Semántica
 - [ x ] [ x ]Linting
