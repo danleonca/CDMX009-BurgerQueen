@@ -44,48 +44,48 @@ Shari Dan
 
 HTML y CSS
 
-[ x ] [ x ] HTML semántico
-[ x ] [ x ] CSS flexbox
-[ x ] [ x ] Bootstrap
-[ x ] [ x ] Maquetación
-Frontend Development
-[x] [ x ] Componentes
-[x] [ x ] Manejo del estado
-PWA
-[ x ] [ x ] Concepto
-[ x ] [ x ] Utilidad
-[  ] [  ] Que es Workbox
-[ x ] [ x ] Qué es un serviceWorker
-React
-[ x ] [ x ] JSX
-[ x ] [ x ] Componentes class y componentes function
-[ x ] [ x ] props
-[ x ] [ x ] Manejo de eventos
-[ x ] [ x ] Listas y keys
-[ x ] [ x ] Renderizado condicional
-[ x ] [ x ] Levantamiento de estados
-[ x ] [ x ] hooks
-[ x ] [ x ] CSS modules
-[ x] [ x ] React Router
-Firebase
-[ x ] [ x ] Firestore
-[ x ] [ x ] Firebase security rules
-[ x ] [ x ] Observables
-Testing
-[ x ] [ x ] Testeo de tus interfaces
-[ x] [ x ] Testeo de componentes
- [ x  ] [ x ]Testeo asíncrono
- [  x] [ x ]Mocking
-Colaboración en Github
-[ x ] [ x ] Branches
-[ x ] [ x ] Pull Requests
- Tags
-Organización en Github
-[ x ] [ x ] Projects
-[ ] [  ]Issues
-[  ] [  ]Labels
- Milestones
-Buenas prácticas de desarrollo
-[ x ] [ x ] Modularización
-[ x ] [ x ]] Nomenclatura / Semántica
-[ x ] [ x ]Linting
+- [ x ] [ x ] HTML semántico
+- [ x ] [ x ] CSS flexbox
+- [ x ] [ x ] Bootstrap
+- [ x ] [ x ] Maquetación
+- Frontend Development
+- [x] [ x ] Componentes
+- [x] [ x ] Manejo del estado
+- PWA
+- [ x ] [ x ] Concepto
+- [ x ] [ x ] Utilidad
+- [  ] [  ] Que es Workbox
+- [ x ] [ x ] Qué es un serviceWorker
+- React
+- [ x ] [ x ] JSX
+- [ x ] [ x ] Componentes class y componentes function
+- [ x ] [ x ] props
+- [ x ] [ x ] Manejo de eventos
+- [ x ] [ x ] Listas y keys
+- [ x ] [ x ] Renderizado condicional
+- [ x ] [ x ] Levantamiento de estados
+- [ x ] [ x ] hooks
+- [ x ] [ x ] CSS modules
+- [ x] [ x ] React Router
+- Firebase
+- [ x ] [ x ] Firestore
+- [ x ] [ x ] Firebase security rules
+- [ x ] [ x ] Observables
+- Testing
+- [ x ] [ x ] Testeo de tus interfaces
+- [ x] [ x ] Testeo de componentes
+-  [ x  ] [ x ]Testeo asíncrono
+-  [  x] [ x ]Mocking
+- Colaboración en Github
+- [ x ] [ x ] Branches
+- [ x ] [ x ] Pull Requests
+-  Tags
+- Organización en Github
+- [ x ] [ x ] Projects
+- [ ] [  ]Issues
+- [  ] [  ]Labels
+-  Milestones
+- Buenas prácticas de desarrollo
+- [ x ] [ x ] Modularización
+- [ x ] [ x ]] Nomenclatura / Semántica
+- [ x ] [ x ]Linting
