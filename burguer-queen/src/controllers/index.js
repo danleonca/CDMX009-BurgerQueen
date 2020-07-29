@@ -8,7 +8,7 @@ export const createTable = async (element) => {
   let dateIni = dates.hour() * 60 + dates.minute();
   const newTable = {
     ...element,
-    status: "Enviado a cocina",
+    status: "En cocina",
     timeOut: "",
     timePrep: dateIni,
     timeFinal: "",

@@ -1,10 +1,11 @@
 # BURGER QUEEN!!!!!
 
-Es una aplicación diseñada para la administración del flujo de clientes dentro de un restaurante de Hamburguesas.
+Es una aplicación PWA diseñada para la administración del flujo de clientes dentro de un restaurante de Hamburguesas.
 Este restaurante requiere una aplicación donde sus empleados, tanto cocineros como meseros puedan seguir paso a paso el ciclo de vida que tienen cada uno de sus tareas, de una forma fácil y rápida. Lo cual les ayude con el control del restaurante, así como aumentar su productividad y minimizar sus tiempos de pedido-entrega.
 
 Este proyecto fue creado con JS, React, bootstrap y Firebase. 
 ![burger](imgReadme/burger.png)
+![instala](imgReadme/bqInsta.png)
 
 
 Diseño
