@@ -51,7 +51,6 @@ const NewTable = (props) => {
         orden: props.orden,
         date,
       });
-      console.log(data);
       setClient("");
       setTable("");
       setWaiter("");

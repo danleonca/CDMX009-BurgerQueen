@@ -30,7 +30,6 @@ const CardBurger = ({
 
       newarray.push(targ);
       setOrden((previousOrden) => [...previousOrden, ...newarray]);
-      console.log(newarray);
       return newarray;
     }
   };

@@ -3,22 +3,18 @@ import { render, fireEvent } from '@testing-library/react';
 import GetCheck from './GetCheck';
 import { showInfoTables } from "../../controllers";
 
-import { Router } from 'react-router-dom';
-import { createMemoryHistory } from 'history';
+jest.mock('react-router-dom', () => ({
+  ...jest.requireActual('react-router-dom'),
+  useParams: () => ({
+    id: 'FCKFCS5LrLkKGMbQ8UCp',
+  }),
+}));
 
-test('renders learn react link',async () => {
-    const history = createMemoryHistory();
-    const route = '/roles/piso/FCKFCS5LrLkKGMbQ8UCp';
-    history.push(route);
-
-    const { getByRole, getByTestId } = render(
-      <Router history={history}>
-        <GetCheck />
-      </Router>
-    );
-    const btnCheck= getByTestId("btnCheck")
-    fireEvent.click(btnCheck)
-    await waitForElement(() => getByTestId("modalCheck"));
+test('renders learn react link', async () => {
+  const { getByRole, getByTestId } = render(<GetCheck />);
+  const btnCheck= getByTestId("btnCheck")
+  fireEvent.click(btnCheck)
+  await waitForElement(() => getByTestId("modalCheck"));
   const check = getByRole("modal");
-    expect(check).toBeInTheDocument();
-  });
+  expect(check).toBeInTheDocument();
+});

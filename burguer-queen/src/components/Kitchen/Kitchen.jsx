@@ -52,7 +52,7 @@ const Kitchen = (props) => {
       <div id="cardOrders" data-testid="allOrders">
         {table.map((item, index) => (
           <div id="oneOrder" data-testid={"orden" + index} key={item.id}>
-            {item.status === "Enviado a cocina" && (
+            {item.status === "En cocina" && (
               <Meals
                 date={item.date}
                 client={item.client}
@@ -70,7 +70,7 @@ const Kitchen = (props) => {
               />
             )}
             {
-              item.status === "Enviado a cocina" && (
+              item.status === "En cocina" && (
                 <button
                   className="btn buttons inKitchen"
                   onClick={() => changeState(item)}

@@ -15,11 +15,11 @@ import NewTable from './components/NewTable/NewTable';
 import { theWatcher } from './controllers';
 
 function App() {
-  const [orden, setOrden] = React.useState([])
-  const [firebaseUser, setFirebaseUser] = React.useState(false)
+const [orden, setOrden] = React.useState([])
+const [firebaseUser, setFirebaseUser] = React.useState(false)
 
 React.useEffect(() => {
-  theWatcher(setFirebaseUser);
+ theWatcher(setFirebaseUser);
 }, [])
 return firebaseUser !== false ? (
  
