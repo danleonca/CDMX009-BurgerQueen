@@ -5,14 +5,13 @@ import { showInfoTables } from "../../controllers";
 
 const GetCheck = ({ state }) => {
   const { id } = useParams();
-  console.log('aaaaaaaaaaaaaaaaa', id)
   const [total, setTotal] = React.useState([]);
   const [suma, setSuma] = React.useState(total);
   const [finalOrder, setFinalOrder] = React.useState([]);
 
   React.useEffect(() => {
     const obtenerDatos = async () => {
-      try {
+      //try {
         const resul = await showInfoTables(id);
         setTotal(resul);
         const totalPrice = resul.orden.map((item) => item.precio);
@@ -33,9 +32,9 @@ const GetCheck = ({ state }) => {
         setFinalOrder(orderAgrup);
         let priceTotal = totalPrice.reduce((a, b) => a + b, 0);
         setSuma(priceTotal);
-      } catch (error) {
-        return error
-      }
+     // } //catch (error) {
+       // return error
+      //}
     };
     obtenerDatos();
   }, []);
@@ -46,6 +45,7 @@ const GetCheck = ({ state }) => {
   return (
     <div>
       <Modal
+        data-testid = "modalCheck"
         size="lg"
         show={true}
         onHide={() => closeModal(state)}
