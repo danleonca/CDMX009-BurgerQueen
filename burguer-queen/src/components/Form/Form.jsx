@@ -1,21 +1,17 @@
 import React from 'react'
 
-const Form = (props) => {
+const Form = ({types, text, changeAction, getValue}) => {
   return (
     <div>
 
-      <input type={props.types}
-        placeholder={props.text}
+      <input type={types}
+        placeholder={text}
         className="form-control mb-2"
-        onChange={props.changeAction}
-        value={props.val}
-
-      />
+        onChange={changeAction}
+        value={getValue} />
 
     </div>
   )
 }
 
 export default Form
-
-
