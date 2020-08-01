@@ -4,7 +4,7 @@ import ButtonReturn from "../ButtonReturn/ButtonReturn";
 import { showTables2, edit, userLog } from "../../controllers";
 import Meals from "../Meals/Meals";
 import Ready from "../Ready/Ready";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container} from "react-bootstrap";
 import LogOut from "../LogOut/LogOut";
 import { withRouter } from 'react-router-dom'
 import "./kitchen.css";

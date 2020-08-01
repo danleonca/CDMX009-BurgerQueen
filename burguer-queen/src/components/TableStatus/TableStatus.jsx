@@ -60,7 +60,7 @@ const TableStatus = (props) => {
     }
 
     return (
-        <Container>
+        <Container data-testid = "getTable">
             <Navbar>
                 <Navbar.Collapse className="justify-content-center">
                     <Navbar.Brand>
