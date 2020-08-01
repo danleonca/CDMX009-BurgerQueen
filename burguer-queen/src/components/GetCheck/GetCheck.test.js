@@ -1,7 +1,7 @@
 import React from 'react';
 import { render,waitForElement } from '@testing-library/react';
-import GetCheck from './GetCheck';
 
+import GetCheck from './GetCheck';
 
 jest.mock('react-router-dom', () => ({
   ...jest.requireActual('react-router-dom'),

@@ -37,6 +37,7 @@ const Meals = (props) => {
       <div className="card bg-light mb-3" style={{ width: "22rem" }}>
         <div className="card-header" >
           <h3>Orden Mesa: {props.number}</h3>
+          <h4>Estado: {props.status}</h4>
         </div>
         <div className="card-body">
           <h5 className="card-title">{props.date}</h5>
