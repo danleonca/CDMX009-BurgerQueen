@@ -1,7 +1,7 @@
-import React from "react";
-import queen from "../../imgs/queen.svg";
-import RegisterUser from "../RegisterUser/RegisterUser";
-import "./login.css";
+import React from "react"
+import RegisterUser from "../RegisterUser/RegisterUser"
+import queen from "../../imgs/queen.svg"
+import "./login.css"
 
 const Login = () => {
   return (
@@ -12,7 +12,7 @@ const Login = () => {
 
       <RegisterUser />
     </div>
-  );
-};
+  )
+}
 
-export default Login;
+export default Login

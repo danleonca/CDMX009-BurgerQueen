@@ -53,11 +53,12 @@ export const showInfoTables2 = (cb, id) => {
 export const showInfoTables = async (id) => {
   const docRef = db.collection("tables").doc(id);
   const info = await docRef.get();
-  if (info.exists) {
-    return info.data();
-  } else {
-    return console.log("No such document!");
-  }
+ try{
+  return info.data()
+ } catch(error){
+   return error
+ }
+  
 };
 
 export const register = async (email, pass) => {
