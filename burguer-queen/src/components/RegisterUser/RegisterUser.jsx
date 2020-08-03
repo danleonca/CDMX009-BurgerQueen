@@ -1,11 +1,12 @@
 import React from "react";
 import { Modal, Button } from "react-bootstrap";
+import { withRouter } from "react-router-dom";
+
 import Form from "../Form/Form";
 import { login, register } from "../../controllers";
-import { withRouter } from "react-router-dom";
 import "./registerUser.css";
 
-function RegisterUser(props) {
+function RegisterUser({ history }) {
   const [show, setShow] = React.useState(false);
   const [email, setEmail] = React.useState("");
   const [password, setPassword] = React.useState("");
@@ -27,7 +28,7 @@ function RegisterUser(props) {
         setEmail("");
         setPassword("");
         setBoss("");
-        props.history.push("/roles");
+        history.push("/roles");
       } catch (error) {
         if (error.code === "auth/email-already-in-use") {
           setError("Usuario ya registrado...");
@@ -56,7 +57,7 @@ function RegisterUser(props) {
       let logiInUse = await login(email, password);
       setEmail("");
       setPassword("");
-      props.history.push("/roles");
+      history.push("/roles");
     } catch (error) {
       if (error.code === "auth/user-not-found") {
         setError("Usuario no registrado");
@@ -67,13 +68,12 @@ function RegisterUser(props) {
       if (error.code === "auth/invalid-email") {
         setError("Email con formato equivocado");
       }
-
     }
   };
 
   return (
     <>
-      <Button  data-testid="entrar" className="getIn" onClick={handleShow}>
+      <Button data-testid="entrar" className="getIn" onClick={handleShow}>
         Entrar
       </Button>
 
@@ -87,14 +87,14 @@ function RegisterUser(props) {
           )}
 
           {error && <div className="alert alert-danger">{error} </div>}
-         
-          <Form 
+
+          <Form
             types="email"
             text="Ingresa tu email"
             changeAction={(e) => setEmail(e.target.value)}
             val={email}
           />
-          
+
           <Form
             types="password"
             text="Ingresa tu contraseña"
@@ -112,7 +112,11 @@ function RegisterUser(props) {
         </Modal.Body>
         <Modal.Footer>
           {!newRegister && (
-            <Button data-testid="register" variant="secondary" onClick={() => activeRegister()}>
+            <Button
+              data-testid="register"
+              variant="secondary"
+              onClick={() => activeRegister()}
+            >
               ¿No tienes cuenta?
             </Button>
           )}

@@ -1,18 +1,21 @@
-import React from "react";
-import { Container, Row, Col, ListGroup, Card } from "react-bootstrap";
-import iconDelete from "../../imgs/iconDelete.png";
-import hamburger from "../../imgs/hamburger.png";
-import ButtonReturn from "../ButtonReturn/ButtonReturn";
-import Form from "../Form/Form";
-import CardBurger from "../CardBurger/CardBurger";
-import { createTable, userLog } from "../../controllers";
-import { breackfast, burgersTime } from "../../utils/menus.js";
+import React from "react"
 import {withRouter} from 'react-router-dom'
-import './newTable.css';
+import { Container, Row, Col, ListGroup, Card } from "react-bootstrap"
+
+import ButtonReturn from "../ButtonReturn/ButtonReturn"
+import Form from "../Form/Form"
+import CardBurger from "../CardBurger/CardBurger"
+
+import { createTable, userLog } from "../../controllers"
+import { breackfast, burgersTime } from "../../utils/menus.js"
+
+import iconDelete from "../../imgs/iconDelete.png"
+import hamburger from "../../imgs/hamburger.png"
+import './newTable.css'
 
 const shortid = require("short-id");
 
-const NewTable = (props) => {
+const NewTable = ({orden, setOrden, history}) => {
   const [waiter, setWaiter] = React.useState("");
   const [client, setClient] = React.useState("");
   const [table, setTable] = React.useState("");
@@ -27,13 +30,13 @@ const NewTable = (props) => {
       if (userLog())
      { return userLog()
       } else {
-        props.history.push('/')
+        history.push('/')
       }
     }
   
     checkUser()
 
-  }, [props.history]);
+  }, [history]);
 
   const addElement = async (e) => {
     e.preventDefault();
@@ -48,13 +51,14 @@ const NewTable = (props) => {
         client,
         employ: waiter,
         number: table,
-        orden: props.orden,
+        orden: orden,
         date,
       });
       setClient("");
       setTable("");
       setWaiter("");
-      props.setOrden([]);
+      setOrden([]);
+      console.log("no se etsán setetando ")
 
     } catch (error) {
       return error
@@ -74,7 +78,7 @@ const NewTable = (props) => {
       localId: shortid.generate(),
     };
     newarray.push(targ);
-    props.setOrden([...props.orden, ...newarray]);
+    setOrden([...orden, ...newarray]);
     
     let dates = new Date();
     dates += Date.now();
@@ -86,13 +90,13 @@ const NewTable = (props) => {
     const nuevoArr = [...orden];
     const firstIdx = nuevoArr.map((i) => i.id).indexOf(id);
     nuevoArr.splice(firstIdx, 1);
-    props.setOrden(nuevoArr);
+    setOrden(nuevoArr);
   };
 
   const cartAMostrar =
     (cartDinner && burgersTime) || (cardBreakfast && breackfast);
 
-  let orderAgrup = props.orden.reduce((result, item) => {
+  let orderAgrup = orden.reduce((result, item) => {
     if (!result.hasOwnProperty(item.id)) {
       result[item.id] = {
         ...item,
@@ -114,18 +118,18 @@ const NewTable = (props) => {
           types="text"
           text="Meser@"
           changeAction={(e) => setWaiter(e.target.value)}
-          val={waiter}
+          getValue={waiter}
         />
         <Form
           text="Ingresar nombre del cliente"
           changeAction={(e) => setClient(e.target.value)}
-          val={client}
+          getValue={client}
         />
         <Form
           types="number"
           text="Ingrese número de mesa"
           changeAction={(e) => setTable(e.target.value)}
-          val={table}
+          getValue={table}
         />
       </ul>
      
@@ -168,8 +172,8 @@ const NewTable = (props) => {
                     options={item.flavor}
                     price={item.precio}
                     addToMenu={() => addSomething(item)}
-                    setOrden={props.setOrden}
-                    orden={props.orden}
+                    setOrden= {setOrden}
+                    orden={orden}
                   />
                   </div>
                 ))}
@@ -190,7 +194,7 @@ const NewTable = (props) => {
                           width="25"
                           height="25"
                           alt=""
-                          onClick={() => deleteItem(items.id, props.orden)}/>
+                          onClick={() => deleteItem(items.id, orden)}/>
                          </Col>
                         
                          </Row>
