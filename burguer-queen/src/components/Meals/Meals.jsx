@@ -2,14 +2,14 @@
 import React from "react";
 import { showInfoTables } from "../../controllers";
 
-const Meals = (props) => {
+const Meals = ({date, client, number, status, ids}) => {
   const [order, setOrder] = React.useState([]);
 
   React.useEffect(() => {
     const obtenerDatos = async () => {
       try {
         // eslint-disable-next-line react-hooks/exhaustive-deps
-        const resul = await showInfoTables(props.ids);
+        const resul = await showInfoTables(ids);
         const products = resul.orden;
 
         let orderAgrup = products.reduce((result, item) => {
@@ -36,12 +36,12 @@ const Meals = (props) => {
     <div className="mx-auto d-block">
       <div className="card bg-light mb-3" style={{ width: "22rem" }}>
         <div className="card-header" >
-          <h3>Orden Mesa: {props.number}</h3>
-          <h4>Estado: {props.status}</h4>
+          <h3>Orden Mesa: {number}</h3>
+          <h4>Estado: {status}</h4>
         </div>
         <div className="card-body">
-          <h5 className="card-title">{props.date}</h5>
-          <h5 className="card-title">Cliente:{props.client}</h5>
+          <h5 className="card-title">{date}</h5>
+          <h5 className="card-title">Cliente:{client}</h5>
           <div data-testid="meals">
             {order.map((item, idx) => (
               <div  key={idx} className="mx-auto d-block">
