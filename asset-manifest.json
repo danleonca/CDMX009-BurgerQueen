@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/CDMX009-BurgerQueen/static/css/main.9a0c0c85.chunk.css",
-    "main.js": "/CDMX009-BurgerQueen/static/js/main.32edfad2.chunk.js",
-    "main.js.map": "/CDMX009-BurgerQueen/static/js/main.32edfad2.chunk.js.map",
+    "main.css": "/CDMX009-BurgerQueen/static/css/main.eb6f769c.chunk.css",
+    "main.js": "/CDMX009-BurgerQueen/static/js/main.5deab7e8.chunk.js",
+    "main.js.map": "/CDMX009-BurgerQueen/static/js/main.5deab7e8.chunk.js.map",
     "runtime-main.js": "/CDMX009-BurgerQueen/static/js/runtime-main.a3d0279b.js",
     "runtime-main.js.map": "/CDMX009-BurgerQueen/static/js/runtime-main.a3d0279b.js.map",
-    "static/js/2.7419c1de.chunk.js": "/CDMX009-BurgerQueen/static/js/2.7419c1de.chunk.js",
-    "static/js/2.7419c1de.chunk.js.map": "/CDMX009-BurgerQueen/static/js/2.7419c1de.chunk.js.map",
+    "static/js/2.28ec5aa2.chunk.js": "/CDMX009-BurgerQueen/static/js/2.28ec5aa2.chunk.js",
+    "static/js/2.28ec5aa2.chunk.js.map": "/CDMX009-BurgerQueen/static/js/2.28ec5aa2.chunk.js.map",
     "index.html": "/CDMX009-BurgerQueen/index.html",
-    "precache-manifest.0e8dd6569d9f9fdfa4d32e4efec59abb.js": "/CDMX009-BurgerQueen/precache-manifest.0e8dd6569d9f9fdfa4d32e4efec59abb.js",
+    "precache-manifest.066c225ae4cb3cb38d01c5a85ac6ec41.js": "/CDMX009-BurgerQueen/precache-manifest.066c225ae4cb3cb38d01c5a85ac6ec41.js",
     "service-worker.js": "/CDMX009-BurgerQueen/service-worker.js",
-    "static/css/main.9a0c0c85.chunk.css.map": "/CDMX009-BurgerQueen/static/css/main.9a0c0c85.chunk.css.map",
-    "static/js/2.7419c1de.chunk.js.LICENSE.txt": "/CDMX009-BurgerQueen/static/js/2.7419c1de.chunk.js.LICENSE.txt",
+    "static/css/main.eb6f769c.chunk.css.map": "/CDMX009-BurgerQueen/static/css/main.eb6f769c.chunk.css.map",
+    "static/js/2.28ec5aa2.chunk.js.LICENSE.txt": "/CDMX009-BurgerQueen/static/js/2.28ec5aa2.chunk.js.LICENSE.txt",
     "static/media/burgerStatus.svg": "/CDMX009-BurgerQueen/static/media/burgerStatus.0d1f8ed5.svg",
     "static/media/hamburger.png": "/CDMX009-BurgerQueen/static/media/hamburger.f5f7b6fc.png",
     "static/media/kitchen.svg": "/CDMX009-BurgerQueen/static/media/kitchen.563840f5.svg",
@@ -20,8 +20,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.a3d0279b.js",
-    "static/js/2.7419c1de.chunk.js",
-    "static/css/main.9a0c0c85.chunk.css",
-    "static/js/main.32edfad2.chunk.js"
+    "static/js/2.28ec5aa2.chunk.js",
+    "static/css/main.eb6f769c.chunk.css",
+    "static/js/main.5deab7e8.chunk.js"
   ]
 }
